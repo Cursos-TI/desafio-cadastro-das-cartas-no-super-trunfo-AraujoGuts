@@ -15,7 +15,7 @@ int main(){
 
  printf("\n\n Preencha os Dados da Primeira Carta:\n\n")
  
- ///Construção de dados preechiveis.
+ ///Construção de dados preechiveis da Primeira carta.
 
   printf("Digite o Nome País: \n");
   scanf("%s", &Pais);
@@ -44,7 +44,9 @@ int main(){
   Densidadepopulacional = (Populacao / Area);
   PIBPerCapita = (PIB / Populacao);
 
-  printf("\n***Segunda Carta***\n\n");
+  printf("\n\nPreencha os dados da Segunda Carta:\n\n");
+
+ ///Construção de dados preechiveis da Segunda carta.
 
   printf("Digite o Nome País: \n");
   scanf("%s", &Pais2);
@@ -73,26 +75,34 @@ int main(){
   Densidadepopulacional = (Populacao2 / Area2);
   PIBPerCapita = (PIB2 / Populacao2);
 
-  ///Abertura da apresentaçao dos dados da carta:
+  ///Abertura da apresentaçao dos dados da primeira carta:
 
   printf("\n***Sua carta é:***\n\n");
  
- 
- ///Impressão de dados preechidos de maneira organizada e apresentando de forma e intendimento facil.
+ ///Impressão de dados preechidos de maneira organizada e apresentando de forma organizada e entendimento rapido.
 
   printf("País: %s \n Estado: %s \n Cidade: %s \n Codigo: %s \n", Pais, Estado, Cidade, Codigo);
   printf("População: %f \n PIB: %f \n Área: %f \n Pontos Turisticos: %d \n", Populacao, PIB, Area, Pontosturisticos);
   printf("Densidade Populacional: %.3f \n PIB Per Capita:%.3f \n ", Densidadepopulacional, PIBPerCapita);
   
- printf("\n\n***Sua 2°carta é:***\n\n");
  
+   ///Abertura da apresentaçao dos dados da primeira carta:
+  printf("\n\n***Sua 2°carta é:***\n\n");
+  ///Impressão de dados preechidos de maneira organizada e apresentando de forma organizada e entendimento Rapido.
+
   printf("País: %s \n Estado: %s \n Cidade: %s \n Codigo: %s \n", Pais2, Estado2, Cidade2, Codigo2);
   printf("População: %f \n PIB: %f \n Área: %f \n Pontos Turisticos: %d \n", Populacao2, PIB2, Area2, Pontosturisticos2);
   printf("Densidade Populacional: %.3f \n PIB Per Capita:%.3f \n ", Densidadepopulacional2, PIBPerCapita2);
 
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
-  printf("\n\n***Batalha de atributos (Carta 1):****\n\n");
+ /// Tabela de pontos das cartas com base em que na disputa entre Densidade populacional de ambas as cartas ganhará a que tiver o menor valor.///
+ /// O restante dos atributos vencerá a carta que tiver a mais que a outra.////
+ /// 0(false) = derrota em determinado atributo.///
+ /// 1(true) = vitoria em determinado atributo.///
+
+  printf("\n\n***Pontos da Carta 1:***\n\n");
+
 
   printf("População Carta 1 > Populaçao Carta 2: %d\n", Populacao > Populacao2);
 
@@ -109,7 +119,7 @@ int main(){
  
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
-  printf("\n\n***Batalha de atributos 2°carta:***\n\n");
+  printf("\n\n***Pontos da Carta 2:***\n\n");
 
 
   printf("População Carta 1 < Populaçao Carta 2: %d\n", Populacao < Populacao2);
@@ -122,12 +132,12 @@ int main(){
 
   printf("Densidadepopulacional > Densidadepopulacional2: %d\n", Densidadepopulacional > Densidadepopulacional2);
 
-  printf("PIB Per Capita Carta 1 < PIB Per Capita Carta 2: %d\n", PIBPerCapita < PIBPerCapita2);
+  printf("PIB Per Capita Carta 1 < PIB Per Capita Carta 2: %d\n", PIBPerCapita < PIBPerCapita2); 
 
 
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- printf("\N\N\NA CARTA QUE TIVER MAIS PONTOS É A VENCEDORA!!!!\N\N\N")
+ printf("\n\nA CARTA QUE TIVER MAIS PONTOS É A VENCEDORA!!!!\n\n\n");
 
     return 0;
 }
